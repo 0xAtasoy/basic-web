@@ -1,25 +1,21 @@
-// TODO 1: Sayfa yüklendiğinde çalışacak fonksiyon
+
 document.addEventListener("DOMContentLoaded", function () {
-  //
-  // Görevler:
-  // - Kullanıcıya hoş geldin mesajı gösterin
-  // - Sayfadaki öğeleri seçin ve değişkenlere atayın
-  // - Event listener'ları ekleyin
-  //
+  alert("Hoş geldiniz!");
+  const form = document.getElementById("form");
+  form.addEventListener("submit", handleSubmit);
 });
 
-// TODO 2: Form gönderimini işleyen fonksiyon
-function handleSubmit(event) {
-  //
-  // Görevler:
-  // - event.preventDefault() kullanın
-  // - Form verilerini alın (FormData kullanın)
-  // - Verileri kontrol edin
-  // - Konsola yazdırın
-  // - Kullanıcıya geri bildirim verin
-  //
-}
 
+function handleSubmit(event) {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const message = formData.get("message");
+  // Verileri nasil kontrol edebilirim??? 
+  console.log(`İsim: ${name}, Email: ${email}, Mesaj: ${message}`);
+  alert("Mesajınız başarıyla gönderildi!");
+}
 // TODO 3: Tema değiştirme fonksiyonu
 function toggleTheme() {
   //

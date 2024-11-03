@@ -1,0 +1,144 @@
+/* Genel stil ayarları */
+body {
+  font-family: monospace, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(130, 100%, 1%);
+  color: #f0f0f0f8;
+}
+
+/* Header stilleri */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #f0f0f0f8;
+}
+
+header img {
+  width: 64px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Navigation stilleri */
+nav {
+  background-color: hsl(130, 94%, 70%);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 20px hsla(130, 94%, 80%, 0.5);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(130, 100%, 2%);
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Ana içerik stilleri */
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.content article {
+  padding: 30px;
+  background-color: hsla(130, 100%, 50%, 0.05);
+  border: 2px solid #9cfcac;
+  border-radius: 12px;
+}
+
+.content h2 {
+  color: #9cfcac;
+}
+
+.content article img {
+  margin-top: 25px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Form stilleri */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  margin-top: 50px;
+  background-color: hsla(130, 100%, 50%, 0.05);
+  border: 2px solid hsl(130, 94%, 80%);
+  border-radius: 12px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: hsl(130, 100%, 2%);
+  color: #f0f0f0f8;
+  border-color: hsla(130, 94%, 80%, 0.5);
+}
+
+button {
+  background-color: hsl(130, 94%, 80%);
+  color: hsl(130, 100%, 2%);
+  font-weight: bold;
+  font-size: large;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: hsla(130, 94%, 80%, 0.1);
+  color: hsl(130, 94%, 80%);
+}
+
+/* Footer stilleri */
+footer {
+  color: #f0f0f0f8;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin: 0 20px;
+}
+
+footer a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+footer a img:hover {
+  transform: scale(1.25);
+}
